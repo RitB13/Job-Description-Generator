@@ -11,9 +11,9 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 # Function to generate job description using Gemini API
 def generate_job_description(role, experience, skills, location):
     prompt = f"""
-    Generate a job description for a {role} with {experience} experience, requiring skills in {skills}. 
-    Location: {location}. Include responsibilities, required qualifications, and skills.
-    """
+   Generate a job description for a {role} with {experience} experience, mandatory skills in {skills}. 
+    Location: {location}. Include responsibilities, mandatory skills, required qualifications, and preferred skills.
+     """
     try:
         # Create the generative model instance
         model = genai.GenerativeModel('gemini-pro')
