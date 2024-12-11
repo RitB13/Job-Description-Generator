@@ -51,12 +51,12 @@ def main():
         experience_end = st.number_input("Maximum Experience (Years)", min_value=experience_start, step=1, value=experience_start + 1)
     #experience level
     experience_levels = [
-        'entry','associate','mid-senior','director/vp','executive/president'
+        'Entry','Associate','Mid-Senior','Director/VP','Executive/President'
     ]
     experience_level = st.selectbox("Expereince Level", options=experience_levels)
 
     #Emptype
-    employement_types=['full','part','contract','internship','freelance'
+    employement_types=['Full-Time','Part-Time','Contract','Internship','Freelance'
 
     ]
     employement_type=st.selectbox("Employment Type", options=employement_types)
