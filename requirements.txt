@@ -1,4 +1,7 @@
 streamlit
-google-generative-ai
+google-generativeai
 python-dotenv
 pycountry
+Pillow
+plotly
+pandas
